@@ -25,8 +25,11 @@ The analysis focuses on answering practical business questions such as:
 * Are delivery delays primarily related to shipment size and cost?
 * Are there seasonal patterns in shipment volumes?
 * Where are the major operational bottlenecks and cost-optimization opportunities?
+* Can SQL be used to define reproducible and auditable supply-chain KPIs?
+* Which countries, vendors, shipment modes, and time periods require deeper operational investigation?
 
 The goal was not only to explore the dataset but also to translate the analysis into **actionable business insights and supply-chain recommendations**.
+A SQLite SQL layer was added between data preparation and visual EDA to create reproducible, auditable business metrics before visual investigation.
 
 ---
 
@@ -84,8 +87,10 @@ Some important variables include:
 ### Programming & Data Analysis
 
 * **Python**
+* **SQL**
 * **Pandas**
 * **NumPy**
+* **SQLite**
 
 ### Data Visualization
 
@@ -114,6 +119,8 @@ Missing Value Analysis
 Data Type Conversion
      ↓
 Feature Engineering
+     ↓
+SQL Analysis & KPI Layer
      ↓
 Exploratory Data Analysis
      ↓
@@ -277,6 +284,44 @@ I also extracted:
 These features enabled monthly and yearly shipment trend analysis.
 
 ---
+#  SQL Analysis & Business KPI Layer
+
+To complement the Python-based analysis, I added a SQL layer using SQLite.
+
+The feature-engineered DataFrame is loaded into an in-memory SQLite database as a `shipments` table. SQL queries are then used to define reproducible and auditable business metrics before moving into visual EDA.
+
+This layer acts as a decision layer between data preparation and visualization.
+
+### SQL Analysis Areas
+
+The SQL analysis focuses on:
+
+-  Overall shipment and delivery KPIs
+-  Freight-cost concentration by country
+-  Average delivery delay by shipment mode
+-  Country-level on-time delivery performance
+-  Vendor freight-cost efficiency
+-  Monthly shipment seasonality
+-  Yearly country freight-cost rankings
+
+### SQL KPI Snapshot
+
+The initial KPI query establishes a baseline for:
+
+- Total shipments
+- On-time shipments
+- Delayed shipments
+- Unassessed shipments
+- Average delivery delay
+- Total freight cost
+
+### Why SQL Was Added
+
+Adding SQL provides a structured way to answer business questions directly from the cleaned shipment table.
+
+It also makes the analysis more reproducible by defining metrics through explicit queries rather than relying only on Python aggregations.
+
+The SQL outputs are then used as a foundation for the visual EDA that follows.
 
 #  Exploratory Data Analysis
 
@@ -766,6 +811,18 @@ Through this project, I applied the following skills:
 * Numerical operations
 * Conditional transformations
 * Array-based calculations
+ 
+### SQL & SQLite
+
+* SQL querying
+* Aggregation using `GROUP BY`
+* Conditional aggregation using `CASE WHEN`
+* Filtering using `WHERE`
+* Ranking using window functions
+* Common Table Expressions (CTEs)
+* SQL-based KPI development
+* Business metric validation
+* Querying cleaned analytical tables
 
 ### Data Visualization
 
@@ -810,7 +867,11 @@ Raw Data
     ↓
 Cleaning
     ↓
-Analysis
+Feature Engineering
+    ↓
+SQL Business Metrics
+    ↓
+Visual EDA
     ↓
 Pattern Identification
     ↓
@@ -901,7 +962,7 @@ Develop a risk-scoring framework based on:
 ```text
 fedex-logistics-supply-chain-analysis/
 │
-├──  FedEx_Logistics_Supply_Chain_Analysis.ipynb
+├──  FedEx_Logistics_Supply_Chain_Analysis_.ipynb
 │
 ├──  data/
 │   └── scms_delivery_history_raw.csv
@@ -952,21 +1013,24 @@ Alternatively, the notebook can be opened directly using **Google Colab**.
 
 #  Project Highlights
 
-| Area                | Analysis                                         |
-| ------------------- | ------------------------------------------------ |
-| Dataset             | 10,324 records, 33 columns                       |
-| Data Cleaning       | Missing values, duplicates, data types           |
-| Feature Engineering | Delivery Delay, Processing Time, Delivery Status |
-| Transportation      | Shipment mode analysis                           |
-| Cost                | Freight cost analysis                            |
-| Geography           | Country-level shipment analysis                  |
-| Vendors             | Vendor concentration analysis                    |
-| Manufacturing       | Manufacturing-site analysis                      |
-| Time Series         | Yearly and monthly shipment trends               |
-| Performance         | Delivery delay and on-time analysis              |
-| Statistics          | Correlation analysis                             |
-| Visualization       | Matplotlib, Seaborn, Plotly                      |
-| Business Output     | Recommendations and operational insights         |
+| Area                | Analysis                                                      |
+| ------------------- | --------------------------------------------------------------|
+| Dataset             | 10,324 records, 33 columns                                    |
+| Data Cleaning       | Missing values, duplicates, data types                        |
+| Feature Engineering | Delivery Delay, Processing Time, Delivery Status              |
+| SQL                 | SQLite-based business KPI and operational analysis            |
+| SQL Techniques      | GROUP BY, CASE WHEN, CTEs, HAVING, Window Functions           |
+| SQL-to-EDA          | SQL-defined business metrics followed by visual investigation |
+| Transportation      | Shipment mode analysis                                        |
+| Cost                | Freight cost analysis                                         |
+| Geography           | Country-level shipment analysis                               |
+| Vendors             | Vendor concentration analysis                                 |
+| Manufacturing       | Manufacturing-site analysis                                   |
+| Time Series         | Yearly and monthly shipment trends                            |
+| Performance         | Delivery delay and on-time analysis                           |
+| Statistics          | Correlation analysis                                          |
+| Visualization       | Matplotlib, Seaborn, Plotly                                   |
+| Business Output     | Recommendations and operational insights                      |
 
 ---
 
@@ -992,7 +1056,7 @@ This project demonstrates my ability to take a raw business dataset, clean and t
 
 Skills:
 
-`Python` • `SQL` • `Pandas` • `NumPy` • `Power BI` • `Excel` • `Data Visualization` • `Machine Learning`
+`Python` • `SQL` • `SQLit` • `Pandas` • `NumPy` • `Power BI` • `Excel` • `Data Visualization` • `Machine Learning`
 
 ### GitHub
 
