@@ -708,33 +708,33 @@ Missing shipment modes and non-standard entries in fields such as weight and fre
 
 The following visualizations summarize the most important findings from the project:
 
-###  Delivery Performance by Shipment Mode
+###  Delivery Status by Shipment Mode
 
-`![Delivery Status by Shipment Mode](images/delivery_status_by_mode.png)`
+![Delivery Status by Shipment Mode](https://github.com/sakshi200-code/fedex-logistics-supply-chain-analysis/blob/main/images/Delivery_Status_by_Shipment_Mode.png)
 
 ###  Average Freight Cost by Shipment Mode
 
-`![Average Freight Cost by Shipment Mode](images/average_freight_cost_by_mode.png)`
+![Average Freight Cost by Shipment Mode](https://github.com/sakshi200-code/fedex-logistics-supply-chain-analysis/blob/main/images/Average_Freight_Cost_By_Shipment_Mode.png)
 
 ###  Average Delivery Delay by Shipment Mode
 
-`![Average Delivery Delay by Shipment Mode](images/average_delivery_delay_by_mode.png)`
+![Average Delivery Delay by Shipment Mode](https://github.com/sakshi200-code/fedex-logistics-supply-chain-analysis/blob/main/images/Average_Delivery_Delay_by_Shipment_Mode.png)
 
-###  Top Countries by Shipment Value
+###  Top 10 Countries by Shipment Value
 
-`![Top Countries by Shipment Value](images/top_countries_by_shipment_value.png)`
+![Top 10 Countries by Shipment Value](https://github.com/sakshi200-code/fedex-logistics-supply-chain-analysis/blob/main/images/Top_10_Countries_by_Shipment_Value.png)
 
 ###  Top Vendors by Shipment Value
 
-`![Top Vendors by Shipment Value](images/top_vendors_by_shipment_value.png)`
+![Top Vendors by Shipment Value](https://github.com/sakshi200-code/fedex-logistics-supply-chain-analysis/blob/main/images/Top_Vendors_by_Shipment_Value.png)
 
 ###  Countries with Highest Processing Time
 
-`![Processing Time by Country](images/processing_time_by_country.png)`
+![Processing Time by Country](https://github.com/sakshi200-code/fedex-logistics-supply-chain-analysis/blob/main/images/Countries_with_Highest_Average_Processing_Time.png)
 
 ###  Correlation Heatmap
 
-`![Correlation Heatmap](images/correlation_heatmap.png)`
+![Correlation Heatmap](https://github.com/sakshi200-code/fedex-logistics-supply-chain-analysis/blob/main/images/Correlation_Heatmap.png)
 
 ---
 
