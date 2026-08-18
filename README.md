@@ -70,13 +70,6 @@ Python, Jupyter Notebook, Pandas, NumPy, Matplotlib, Seaborn, and Plotly.
 - Shipment volume reaches its highest point in **2014 (1,573 shipments)**. Across months, **August** has the highest activity (**1,030 shipments**).
 - **Nigeria** has the highest freight cost among destination countries, making it an important area for cost-optimization efforts.
 
-## Power BI dashboard
-
-Explore the interactive dashboard: [FedEx Logistics & Supply Chain Dashboard](https://app.powerbi.com/Redirect?action=openreport&context=Annotate&ctid=850aa78d-94e1-4bc6-9cf3-8c11b530701c&pbi_source=mobile_android&groupObjectId=8f44476f-93f9-42ef-9b9b-9533257dee48&reportObjectId=35bf2b6e-6298-47f8-91e3-65544d30fee2&reportPage=10ad3d40769f7e303c91&bookmarkGuid=595d3c91-d9ac-41d8-a831-4753cb9c4eca&fullScreen=0)
-
-### Executive overview
-
-![Executive overview of shipment volume, processing time, delivery variance, freight cost, shipment modes, and monthly shipment trend](images/powerbi-executive-overview.png)
 
 ### Operational analysis
 
